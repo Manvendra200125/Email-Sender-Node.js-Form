@@ -26,16 +26,16 @@ app.post('/send-email', (req, res) => {
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'msnlovepg33@gmail.com',
-            pass: 'vpfy jocs wslb jayx' // Do not share your password directly
+            user: 'abc@gmail.com', // Add mail To Admin 
+            pass: 'xxxx xxxx xxxx xxxx' // Do not share your password directly
         }
     });
 
     // Email options
     const mailOptions = {
-        from: 'msnlovepg33@gmail.com', // Your email (sender email)
+        from: 'abc@gmail.com', // Your email (sender email)
         replyTo: email, // User's email so you can reply directly
-        to: 'msnlovepg33@gmail.com', // Replace with your email to receive the message
+        to: 'abc@gmail.com', // Replace with your email to receive the message
         subject: subject,
         text: `You have received a message:\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nSubject: ${subject}\nMessage: ${message}`
     };
